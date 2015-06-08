@@ -1,0 +1,15 @@
+{% extends 'WorkshopProductBundle::layout.html.twig' %}
+
+{% block body -%}
+    <h1>Product creation</h1>
+
+    {{ form(form) }}
+
+        <ul class="list-unstyled">
+    <li>
+        <a href="{{ path('') }}">
+            Back to the list
+        </a>
+    </li>
+</ul>
+{% endblock %}
