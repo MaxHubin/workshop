@@ -1,4 +1,7 @@
 security:
+
+    access_denied_url: /error404
+
     providers:
         in_memory:
             memory: ~
@@ -10,3 +13,8 @@ security:
 
         default:
             anonymous: ~
+
+    access_control:
+#         - { path: ^/role1, roles: ROLE_ROLE1 }
+#         - { path: ^/role2, roles: ROLE_ROLE2 }
+#         - { path: ^/role3, roles: ROLE_ROLE3 }

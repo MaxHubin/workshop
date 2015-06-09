@@ -1,3 +1,6 @@
-app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
+workshop_acl:
+    resource: "@WorkshopAclBundle/Resources/config/routing.yml"
+    prefix:   /
+
+access_denied:
+    path: /error404
