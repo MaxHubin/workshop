@@ -22,7 +22,7 @@ class ProductController extends Controller
      * Lists all Product entities.
      * @param Request $request
      * @return array
-     * @Route("/", name="")
+     * @Route("/", name="_")
      * @Method("GET")
      * @Template()
      */
