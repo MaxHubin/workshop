@@ -1,3 +1,4 @@
-app:
-    resource: "@AppBundle/Controller/"
+workshop_product:
+    resource: "@WorkshopProductBundle/Controller/"
     type:     annotation
+    prefix:   /

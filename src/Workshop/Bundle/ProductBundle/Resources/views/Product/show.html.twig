@@ -1,0 +1,30 @@
+{% extends 'WorkshopProductBundle::layout.html.twig' %}
+
+{% block body -%}
+    <h1>{{ entity.name }}
+        <small># {{ entity.id }}</small>
+    </h1>
+
+    <div class="row">
+        {% if not entity.img %}
+            <img src="unknown.png" class="img-responsive">
+        {% else %}
+            <img src="upload/{{ entity.img }}" class="img-responsive">
+        {% endif %}
+    </div>
+    <div class="row">
+        <ul class="list-unstyled">
+            <li>
+                <a href="{{ path('') }}">
+                    Back to the list
+                </a>
+            </li>
+            <li>
+                <a href="{{ path('_edit', { 'id': entity.id }) }}">
+                    Edit
+                </a>
+            </li>
+            <li>{{ form(delete_form) }}</li>
+        </ul>
+    </div>
+{% endblock %}

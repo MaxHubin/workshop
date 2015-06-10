@@ -1,0 +1,10 @@
+body {
+    padding-top: 50px;
+}
+.starter-template {
+    padding: 40px 15px;
+}
+.records_list .preview_image img{
+    max-height: 200px;
+    max-width: 200px;
+}
