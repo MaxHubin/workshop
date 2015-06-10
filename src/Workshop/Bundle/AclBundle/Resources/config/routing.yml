@@ -1,0 +1,15 @@
+login:
+    path:     /
+    defaults: { _controller: WorkshopAclBundle:User:login }
+
+role1:
+    path:     /role1
+    defaults: { _controller: WorkshopAclBundle:User:role1 }
+
+role2:
+    path:     /role2
+    defaults: { _controller: WorkshopAclBundle:User:role2 }
+
+role3:
+    path:     /role3
+    defaults: { _controller: WorkshopAclBundle:User:role3 }

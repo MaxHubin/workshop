@@ -2,3 +2,6 @@ workshop_product:
     resource: "@WorkshopProductBundle/Controller/"
     type:     annotation
     prefix:   /
+workshop_acl:
+    resource: "@WorkshopAclBundle/Resources/config/routing.yml"
+    prefix:   /acl/
