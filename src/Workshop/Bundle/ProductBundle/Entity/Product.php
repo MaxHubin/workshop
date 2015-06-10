@@ -162,6 +162,7 @@ class Product
 
     /**
      * @ORM\PreUpdate()
+     * @ORM\PrePersist
      */
     public function preUpload()
     {
@@ -180,6 +181,7 @@ class Product
 
     /**
      * @ORM\PostUpdate()
+     * @ORM\PostPersist
      */
     public function upload()
     {
