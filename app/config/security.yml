@@ -1,18 +1,20 @@
 security:
-
+    encoders:
+        FOS\UserBundle\Model\UserInterface: bcrypt
     access_denied_url: /error404
 
     providers:
-        in_memory:
-            memory: ~
+      fos_userbundle:
+        id: fos_user.user_provider.username
 
     firewalls:
-        dev:
-            pattern: ^/(_(profiler|wdt|error)|css|images|js)/
-            security: false
-
-        default:
-            anonymous: ~
+        main:
+          pattern: ^/
+          form_login:
+            provider: fos_userbundle
+            csrf_provider: security.csrf.token_manager # Use form.csrf_provider instead for Symfony <2.4
+          logout:       true
+          anonymous:    true
 
     access_control:
 #         - { path: ^/role1, roles: ROLE_ROLE1 }
