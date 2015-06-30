@@ -19,9 +19,9 @@
                 <td>{{ entity.name }}</td>
                 <td class="preview_image">
                     {% if not entity.img  %}
-                        <img src="unknown.png" class="img-responsive">
+                        <img src="{{ asset('upload/unknown.png') }}" class="img-responsive">
                     {% else %}
-                        <img src="upload/{{ entity.img }}" class="img-responsive">
+                        <img src="{{ asset('upload/'~ entity.img) }}" class="img-responsive">
                     {% endif %}
                 </td>
                 <td>
