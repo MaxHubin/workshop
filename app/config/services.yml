@@ -12,3 +12,7 @@ services:
         public: false
         tags:
             - { name: twig.extension }
+  workshop_catalog.catalog_manipulator:
+        class: Workshop\Bundle\CatalogBundle\Util\CatalogManipulator
+        arguments:
+            - @doctrine

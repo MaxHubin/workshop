@@ -1,3 +1,8 @@
+workshop_catalog:
+    resource: "@WorkshopCatalogBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 workshop_user:
     resource: "@WorkshopUserBundle/Resources/config/routing.yml"
     prefix: /user

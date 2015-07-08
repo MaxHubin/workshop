@@ -23,6 +23,7 @@ class AppKernel extends Kernel
             new Workshop\Bundle\AclBundle\WorkshopAclBundle(),
             new Workshop\Bundle\UserBundle\WorkshopUserBundle(),
             new FOS\UserBundle\FOSUserBundle(),
+            new Workshop\Bundle\CatalogBundle\WorkshopCatalogBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
